@@ -1,0 +1,115 @@
+<html>
+ <head>
+   <title>Pagina Web Mundial Brasil 2014</title>
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+ </head>
+<body background="images/brasil-2014.jpg">
+  <table borde="0" align="center" class="menu">
+    <tr class:"menu=th a">
+        <th><a href="lista_equipos.html">Lista de Equipos</a></th>
+        <th><a href="calendario_resultados.html">Calendario y Resultados</a></th>
+	<th><a href="tabla_grupos.html">Tabla de Grupos</a><th/>
+    </tr>
+    <tr>
+	<th><a href="goleo_individual.html">Goleo Individual</a></th>
+	<th><a href="goleo_equipos.html">Goleo por Equipo</a></th>
+	<th><a href="estadisticas.html">Estad&iacute;sticas</a><th/>
+    </tr>
+    <tr>
+	<th colspan="3"><a href="noticias.html">Noticias</a></th>
+    </tr>
+    <tr>
+	<th colspan="3"><a href="captura_resultados.html">Captura Resultados</a></th>
+    </tr>
+ </table>
+  <div align="center">
+  <img width="50%" height="50%" src="images/World-Cup.png">
+  </div>
+
+
+ <form name="resultadosForm" method="post" action="guardar.php">
+  <table border="0" align="center" width="50%">
+   <caption><h2>Captura de Resultados</h2></caption>
+
+ <tr>
+     <th>Fecha</th>
+     <th>Equipo Local</th>
+     <th>Marcador</th>
+     <th>Equipo Visitante</th>
+ </tr>
+ <tr>
+   <td>
+     23/Junio/2014
+   </td>
+   <td>
+      <img src="images/Croacia.png" align="center" />
+      Croacia
+   </td>
+   <td>
+   <input type="text" name="equipo1_local" value="" style="width:30px" /> -
+   <input type="text" name="equipo2_visitante" value="" style="width:30px" />
+   </td>
+   <td>
+       México
+      <img src="images/Mexico.png" align="center" />
+       
+   </td>
+ <tr>
+ <td>
+     24/Junio/2014
+   </td>
+   <td>
+      <img src="images/Alemania.png" align="center" />
+      Alemania
+   </td>
+   <td>
+   <input type="text" name="equipo3_local" value="" style="width:30px;" /> -
+   <input type="text" name="equipo4_visitante" value="" style="width:30px;" />
+   </td>
+   <td>
+       Ghana
+      <img src="images/Ghana.png" align="center" />
+       
+   </td>
+ </tr>
+
+ <tr>
+ <td>
+     25/Junio/2014
+   </td>
+   <td>
+    
+      <img src="images/Mexico.png" align="center" />
+    <select name="equipos5_local">
+    <option value=""></option>
+    <option value="Mexico">M&eacute;xico</option>
+    <option value="Brasil">Brasil</option>
+    </select>
+
+   </td>
+   <td>
+   <input type="text" name="equipo5_local" value="" style="width:30px;" /> -
+   <input type="text" name="equipo6_visitante" value="" style="width:30px;" />
+   </td>
+   <td>
+    <select name="equipos6_local">
+    <option value=""></option>
+    <option value="Mexico">M&eacute;xico</option>
+    <option value="Brasil">Brasil</option>
+    </select>
+
+      <img src="images/Brasil.png" align="center" />
+       
+   </td>
+ </tr>
+
+ <tr>
+   <td align=right colspan="4">
+   <input type="submit" name="Guardar" value="Guardar" />
+   </td>
+ </tr>
+
+   </table>
+  </form>
+ </body>
+</html>

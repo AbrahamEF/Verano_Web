@@ -1,0 +1,105 @@
+<html>
+ <head>
+   <title>Pagina Web Mundial Brasil 2014</title>
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+ </head>
+<body background="images/brasil-2014.jpg">
+  <table borde="0" align="center" class="menu">
+    <tr class:"menu=th a">
+        <th><a href="lista_equipos.html">Lista de Equipos</a></th>
+        <th><a href="calendario_resultados.html">Calendario y Resultados</a></th>
+	<th><a href="tabla_grupos.html">Tabla de Grupos</a><th/>
+    </tr>
+    <tr>
+	<th><a href="goleo_individual.html">Goleo Individual</a></th>
+	<th><a href="goleo_equipos.html">Goleo por Equipo</a></th>
+	<th><a href="estadisticas.html">Estad&iacute;sticas</a><th/>
+    </tr>
+    <tr>
+	<th colspan="3"><a href="noticias.html">Noticias</a></th>
+    </tr>
+    <tr>
+	<th colspan="3"><a href="captura_resultados.html">Captura Resultados</a></th>
+    </tr>
+ </table>
+  <div align="center">
+  <img width="50%" height="50%" src="images/World-Cup.png">
+  
+  
+          <form method="POSt" action="">
+          <label for="id_nombre">Nombre</label>
+          <input type="text" id="id_nombre" name="id_nombre" required>
+
+          <label for="id_apellido">Apellidos</label>
+          <input type="text" id="id_apellido" name="id_apellido" required>
+
+
+          <label for="id_edad">Edad</label>
+          <input type="text" id="id_edad" name="id_edad" required>
+
+
+          <label for="id_estatura">Estatura</label>
+          <input type="text" id="id_estatura" name="id_estatura" required>
+
+
+          <label for="id_peso">Peso</label>
+          <input type="text" id="id_peso" name="id_peso" required>
+
+
+          <label for="id_genero">Genero</label>
+          <select name="id_genero" id="id_genero" required>
+          <option value=""></option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          </select>
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <div>  
+          <label for="id_foto">Foto</label>
+          <input type="file" id="id_foto" name="id_foto" required>
+          </div>
+
+          <label for="id_equipo">Equipo</label>
+          <select name="id_equipo" id="id_equipo" required>
+          <option value=""></option>
+          <option value="Alemania">Alemania</option>
+          <option value="Brasil">Brasil</option>
+          <option value="México">M&eacute;xico</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Portugal">Portugal</option>
+          </select>
+
+
+          <label for="id_posicion">Posición</label>
+          <input type="text" id="id_posicion" name="id_posicion" required>
+
+          <label for="id_numplayera"># Playera</label>
+          <input type="text" id="id_numplayera" name="id_numplayera" required>
+
+          <label for="id_clup">Clup</label>
+          <input type="text" id="id_clup" name="id_clup" required>
+
+          <br/>
+          <br/>
+          <br/>
+          <div>
+          <label for="id_uniforme">Uniforme</label>
+          <input type="file" id="id_uniforme" name="id_uniforme" required>
+          </div>
+
+          <br/>
+        <div>
+          <input type="submit" value="Guardar">
+        </div>
+
+
+
+
+        </form>
+      </div>
+  </body>
+</html>
