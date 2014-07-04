@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(document).ready(
+				function(){
+
+					
+
+				$('#sumar').click(function(){
+                alert(parseFloat($('#uno').val()) + parseFloat($('#dos').val()));
+                alert($('#Resultado'));
+
+					//alert($('#elemento1').css('fontSize'));//dice cuatos px tiene
+					//$('#elemento1').css('fontSize', '100px'); //lo hace mas grande
+					//alert($('#elemento1').css('fontSize'));//cuantos pixeles tiene
+					//$('#elemento1').css({ 'fontSize' : '100px', 'color' : 'red' });//pixeles y color
+					//$('#elemento1').hide('slow');//desaparece lento
+					//$('#elemento1').show('slow');//desaparece lento
+					//$('#elemento3').css("background-color", "#ff0000");
+					//$('#elemento1').click(
+					//	function(){
+					//		$(this).hide('slow');
+							
+					/*		$('#boton').click(
+								function(){
+								alert($('#input1').val());	
+							//	}		*/
+							//);
+						}
+					);
+					
+				}
+			);
+
+			
+		</script>
+		<input type="text" id="uno">
+		<input type="text" id="dos">
+		<div>
+			Resultado:<input type="text" id="Resultado" value="">
+			<button id="sumar" value="sumar">Sumar</button>
+		</div>
+		
+
+	<!--input type="text" id="input1">
+	<button id="boton">Aceptar</button-->
+
+
+	</head>
+		<body>
+			<div id="container" class="elemento2">
+				<h1 id="titulo">
+					<p class="parrafo" id="elemento1"> Javascript </p>
+				</h1>
+			</div>
+
+			<div id="container" class="elemento2">
+				<h1 id="titulo">
+					<p class="parrafo" id="elemento3"> JQuery </p>
+				</h1>
+			</div>
+
+			<div>
+				<h1 class="titulo">Verano WEB</h1>
+				<h2 class="titulo">JavaScript</h2>
+			</div>
+		</body>
+</html>
