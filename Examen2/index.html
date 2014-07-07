@@ -23,10 +23,44 @@
         function(){
           $(".mostrar").hide('slow');
 
-          
+          $('#ver').click(function(){
+                    $(".mostrar").show('slow');   
 
-        $('#ver').click(function(){
-                    $(".mostrar").show('slow');
+            
+            $(".integrante").hide('slow');        
+            $(".jugador").hide('slow');
+
+             
+                $('#btn1').click(function(){
+                    $(".integrante").show('slow'); 
+
+                    $('#btn2').click(function(){
+                           $(".jugador").show('slow'); 
+
+                      }   
+                    );
+
+                }   
+              );
+         }   
+        );
+               
+      }   
+    );
+
+
+/*      function(){
+              $(".integrante").hide('slow');
+              
+
+      function(){
+                  $(".jugadr").hide('slow');
+      }   
+      );
+      }   
+      );*/
+
+
                // alert(parseFloat($('#uno').val()) + parseFloat($('#dos').val()));
                 //alert($('#Resultado'));
 
@@ -46,12 +80,10 @@
                 alert($('#input1').val());  
               //  }   */
               //);
-            }
-          );
+        
           
-        }
-      );
-
+          
+      
       
     </script>
 
@@ -91,8 +123,8 @@
 
 
     <div class="container">
-      <div class="mostrar">
-        <div class="row">
+      <div class="row">
+        <div class="mostrar">
           <div class="col-md-4">
             <h1>Equipo</h1>
             <form role="form">
@@ -100,33 +132,40 @@
                     <label for="nombre">Nombre de Equipo:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Equipo" required>
                 </div>
+
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="idpais" name="idpais">
                       ID Pais
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Dropdown link</a></li>
-                        <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">MEX01</a></li>
+                      <li><a href="#">BRA02</a></li>
                     </ul>
                   </div>
-              </div>
+          </div>
+        
                   <!--div class="form-group">
                     <label for="bandera">Escudo</label>
                     <input type="file" id="escudo" name="escudo" required>
                   </div-->
           
-
+          
+        
           <div class="col-md-4">
             <h1>Integrante</h1>
             <button type="submit" class="btn btn-default" id="btn1">Integrantes</button>
             <button type="submit" class="btn btn-default" id="btn2">Jugador</button>
           </div>
+        
 
+
+        
           <div class="col-md-4">
-            <h1>Tipo de Integrante</h1>
+            <div class="integrante">
+              <h1>Tipo de Integrante</h1>
 
-            <div class="form-group">
+                <div class="form-group">
                     <label for="nombre">Nombre de Integrante:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Equipo" required>
                 </div>
@@ -139,10 +178,11 @@
                         <li><a href="#">Dropdown link</a></li>
                         <li><a href="#">Dropdown link</a></li>
                     </ul>
-                  </div>
-              </div>
+                </div>
+            </div>
+            
 
-
+            <div class="jugador">
               <div class="form-group">
                     <label for="nombre">Nombre de Jugador:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Equipo" required>
@@ -156,13 +196,14 @@
                         <li><a href="#">Dropdown link</a></li>
                         <li><a href="#">Dropdown link</a></li>
                     </ul>
-                  </div>
-              </div>
+                </div>
+            </div>
 
 
             
           </div>
-      </div>
+        </div>
+      </div>  
     </div>
 
     
