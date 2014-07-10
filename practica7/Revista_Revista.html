@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="dist/css/bootstrap.css"/>
+	<link rel="stylesheet" href="dist/css/bootstrapValidator.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/pygments-manni.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <div class="container">
+    	<div class="col-lg-6"><br/><br/><br/>
+        	<form role="form" id="registo">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <label for="portada">Portada:</label>
+                <input type="file" class="form-control" name="portada" id="portada">
+              </div>
+
+              <div class="form-group">
+                  	<div class='input-group date' id='datetimepicker1'>
+                    <label for="fecha">Fecha</label> 
+                    	<input type='text' class="form-control" />
+                        	<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                    </div>          
+
+
+              <div class="form-group">
+                <label for="volumen">Volumen:</label>
+                <input type="text" class="form-control" id="volumen" name="volumen" placeholder="Volumen">
+              </div></div>
+
+              <div class="form-group">
+                <label for="subtitulo">Subt&iacute;tulo:</label>
+                <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Subt&iacute;tulo">
+              </div>
+
+              <div class="form-group">
+                <label for="numero">Numero:</label>
+                <input type="text" class="form-control" id="numero" name="numero" placeholder="Numero">
+              </div>
+
+              <div class="form-group">
+                <label for="clave">Clave:</label>
+                <input type="text" class="form-control" id="clave" name="clave" placeholder="Clave">
+              </div>                          
+                    
+              <div class="form-group">
+                <label for="directorio">Directorio:</label>
+                <input type="text" class="form-control" name="directorio" id="directorio" placeholder="Directorio">
+              </div>
+              
+               <div class="form-group">
+                <label for="editorial">Editorial:</label>
+                <input type="text" class="form-control" name="editorial" id="editorial" placeholder="Editorial">
+              </div>
+
+               <div class="form-group">
+                <label for="id_status">Status:</label>
+                  <select id="id_status" name="id_status" class="form-control">
+                    <option>Selecciona</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>                    
+                  </select>
+              </div>
+
+              <button type="submit" class="btn btn-default">Enviar</button>
+            </form></div> 
+        	
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="dist/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>    
+	<script type="text/javascript" src="dist/js/moment.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap-datetimepicker.es.js"></script>	
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrapValidator.min.js"></script>
+   
+         
+    <script>
+	$(document).ready(function() {	
+
+		$('#datetimepicker1').datetimepicker({language: 'es'});		
+		
+		$('#registo').bootstrapValidator({
+			message: 'Este valor no es valido',
+			feedbackIcons: {
+				valid: 'glyphicon glyphicon-ok',
+				invalid: 'glyphicon glyphicon-remove',
+				validating: 'glyphicon glyphicon-refresh'
+			},
+			fields: {
+				nombre: {
+					message: 'Nombre no Valido',
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+						stringLength: {
+							min: 6,
+							max: 30,
+							message: 'El nombre debe tener como minimo 6 caracteres y maximo 30'
+						},						
+					}
+				},
+				portada: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				fecha: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				volumen: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				titulo: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				subtitulo: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				numero: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				clave: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				directorio: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				editorial: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				id_status: {
+					validators: {
+						notEmpty: {
+							message: 'El campo es requerido'
+						},
+					}
+				
+				},
+				
+			}
+		});
+	});
+	
+	
+	</script>
+    <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                    language: 'es'
+                });
+            });
+    </script>
+  </body>
+</html>
