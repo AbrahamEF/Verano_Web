@@ -4,332 +4,185 @@
 ?>
 
 
-      <div class="jumbotron">
-        <h1>Hola, Mundo!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Buttons</h1>
-      </div>
-      <p>
-        <button type="button" class="btn btn-lg btn-default">Default</button>
-        <button type="button" class="btn btn-lg btn-primary">Primary</button>
-        <button type="button" class="btn btn-lg btn-success">Success</button>
-        <button type="button" class="btn btn-lg btn-info">Info</button>
-        <button type="button" class="btn btn-lg btn-warning">Warning</button>
-        <button type="button" class="btn btn-lg btn-danger">Danger</button>
-        <button type="button" class="btn btn-lg btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-default">Default</button>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-sm btn-default">Default</button>
-        <button type="button" class="btn btn-sm btn-primary">Primary</button>
-        <button type="button" class="btn btn-sm btn-success">Success</button>
-        <button type="button" class="btn btn-sm btn-info">Info</button>
-        <button type="button" class="btn btn-sm btn-warning">Warning</button>
-        <button type="button" class="btn btn-sm btn-danger">Danger</button>
-        <button type="button" class="btn btn-sm btn-link">Link</button>
-      </p>
-      <p>
-        <button type="button" class="btn btn-xs btn-default">Default</button>
-        <button type="button" class="btn btn-xs btn-primary">Primary</button>
-        <button type="button" class="btn btn-xs btn-success">Success</button>
-        <button type="button" class="btn btn-xs btn-info">Info</button>
-        <button type="button" class="btn btn-xs btn-warning">Warning</button>
-        <button type="button" class="btn btn-xs btn-danger">Danger</button>
-        <button type="button" class="btn btn-xs btn-link">Link</button>
-      </p>
-
-
-
-      <div class="page-header">
-        <h1>Thumbnails</h1>
-      </div>
-      <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
-
-
-
-      <div class="page-header">
-        <h1>Dropdown menus</h1>
-      </div>
-      <div class="dropdown theme-dropdown clearfix">
-        <a id="dropdownMenu1" href="#" role="button" class="sr-only dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li class="active" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-        </ul>
-      </div>
-
-
-
-
-      <div class="page-header">
-        <h1>Navbars</h1>
-      </div>
-
-      <div class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1">
+            <img width="130%" height="130%" src="../images/mundial.jpg">
           </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+          <div class="col-md-5">
+            <h1>Copa Mndial de la FIFA Brasil 2014</h1><h6>12 Junio-13 Julio</h6>
+          </div>
+          <div class="col-md-6">
+            <img width="120%" height="120%" src="../images/brasil.jpg">
+            <ul class="nav nav-pills">
+              <li class="abled"><a href="#"><span class="glyphicon glyphicon-file"></span> Noticias</a></li>
+              <li class="abled"><a href="#"><span class="glyphicon glyphicon-camera"></span> Fotos</a></li>
+              <li class="abled"><a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Videos</a></li>
+              <li class="abled"><a href="#"><span class="glyphicon glyphicon-tower"></span> Juegos</a></li>
+              <li class="abled"><a href="#"><span class="glyphicon glyphicon-user"></span> Actividad Social <span class="glyphicon glyphicon-user"></span></a></li>
             </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
-      <div class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
           </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+      </div>
+<hr>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-pills">
+            <!--ul class="nav nav-tabs" role="tablist">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Partidos <span class="caret"></span>
+                    </a-->
+              <li class="abled"><a href="#">Partidos</a></li>
+              <li class="abled"><a href="#">Equipos</a></li>
+              <li class="abled"><a href="#">Jugadores</a></li>
+              <li class="abled"><a href="#">Grupos</a></li>
+              <li class="abled"><a href="#">Estadísticas</a></li>
+              <li class="abled"><a href="#">Premios</a></li>
+              <li class="abled"><a href="#">Entradas</a></li>
+              <li class="abled"><a href="#">Destino</a></li>
+              <li class="abled"><a href="#">Organización</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
         </div>
-      </div>
 
 
-
-      <div class="page-header">
-        <h1>Alerts</h1>
-      </div>
-      <div class="alert alert-success">
-        <strong>Well done!</strong> You successfully read this important alert message.
-      </div>
-      <div class="alert alert-info">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-      </div>
-      <div class="alert alert-warning">
-        <strong>Warning!</strong> Best check yo self, you're not looking too good.
-      </div>
-      <div class="alert alert-danger">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>Progress bars</h1>
-      </div>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
-      </div>
-      <div class="progress">
-        <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
-        <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
-        <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
-      </div>
-
-
-
-      <div class="page-header">
-        <h1>List groups</h1>
-      </div>
       <div class="row">
-        <div class="col-sm-4">
-          <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
-              Cras justo odio
-            </a>
-            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-            <a href="#" class="list-group-item">Morbi leo risus</a>
-            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-            <a href="#" class="list-group-item">Vestibulum at eros</a>
+          <div class="col-md-12">
+
+        <div class="btn-group">
+        <button type="submit" class="btn btn-default" id="equ">Alta Equipo</button>
+        <button type="submit" class="btn btn-default" id="int">Alta Integrante</button>
+        <button type="submit" class="btn btn-default" id="pos">Alta Posción</button>
+        <button type="submit" class="btn btn-default" id="pai">Alta País</button>
+        <button type="submit" class="btn btn-default" id="con">Alta Continente</button>
+        <button type="submit" class="btn btn-default" id="est">Alta Estadio</button>
+
           </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-            <a href="#" class="list-group-item">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-            </a>
-          </div>
-        </div><!-- /.col-sm-4 -->
       </div>
 
-
-
-      <div class="page-header">
-        <h1>Panels</h1>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-          <div class="panel panel-danger">
-            <div class="panel-heading">
-              <h3 class="panel-title">Panel title</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-
-
-          <form role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-
-
+             
           
-        </div><!-- /.col-sm-4 -->
+      <div class="row">
+          <div class="col-md-9">
+            <h3>miercoles 02 julio</h3>
+          </div>
+          <div class="col-md-3">
+            <h5><span class="glyphicon glyphicon-time"></span> Cambiar a tu zona horaria</h5>
+          </div>
+       </div>
+
+          <hr>
+
+      <div class="row">
+          <div class="col-md-6">
+              <h6>FINAL DEL PARTIDO</h6><h4><img width="5%" height="5%" src="../images/argentina.png">ARGENTINA 1-0 SUIZA<img width="5%" height="5%" src="../images/suiza.png"></h4><h6>Argentina gana en la prórroga <span class="glyphicon glyphicon-list-alt"></span> <span class="glyphicon glyphicon-facetime-video"></span></h6>
+
+          </div>
+          <div class="col-md-6">
+              <h6>FINAL DEL PARTIDO</h6><h4><img width="5%" height="5%" src="../images/Belgica.png">BÉLGICA 2-1 EEUU<img width="5%" height="5%" src="../images/Usa.png"></h4><h6>Bélgica gana en la prórroga <span class="glyphicon glyphicon-list-alt"></span> <span class="glyphicon glyphicon-facetime-video"></span></h6>
+              </h1>
+          </div>
       </div>
 
 
-
-      <div class="page-header">
-        <h1>Wells</h1>
+      <div class="row">
+          <div class="col-md-12">
+            <img width="100%" height="10%" src="../images/penal.jpg">
+          </div>
       </div>
-      <div class="well">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+<br/>
+      <div class="row">
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/howard.jpg"><h5>ESTADOS UNIDOS</h5><h4>Howard asombra al mundo<h5><h6>miércoles 2 julio 2014</h6>
+          </div>
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/escobar.jpg"><h5>COLOMBIA</h5><h4>Veinte años sin Escobar</h4><h6>miércoles 2 julio 2014</h6>
+          </div>
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/anuncio.jpg">
+          </div>
+      </div>
+
+<br/>
+<br/>
+
+
+
+      <div class="row">
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/robben.jpg"><h5>PAÍSES BAJOS</h5><h4>Robben: "Me estoy divirtiendo mucho"<h5><h6>miércoles 2 julio 2014</h6>
+          </div>
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/1982.jpg"><h5>BRAZIL 2014</h5><h4>Partidos clásicos: Argentina-Bélgica en España 1982</h4><h6>miércoles 2 julio 2014</h6>
+          </div>
+          <div class="col-md-4">
+            <img width="100%" height="100%" src="../images/anuncio2.jpg">
+          </div>
+      </div>
+
+      <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+        <ol class="breadcrumb">
+            <li><a href="#">Todas las Noticias <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li><a href="#">Más Fotos <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li><a href="#">Más Videos <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li><a href="#">Archivos de Live Blogs <span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        </ol>
+      </div>
+
+<br/>
+<br/>
+<br/>
+
+<!--hr width="100%"-->
+      <div class="row">
+          <div class="col-md-12">
+            <h3>Disfruta tu experiencia en Brasil  _________________________________________________________________</h3>
+            </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-4">
+            <img width="80%" height="80%" src="../images/entradas.jpg">
+          </div>
+          <div class="col-md-4">
+            <img width="80%" height="80%" src="../images/alojamiento.jpg">
+          </div>
+          <div class="col-md-4">
+            <img width="80%" height="80%" src="../images/hospitalidad.jpg">
+          </div>
+      </div>
+
+
+      <div class="row">
+          <div class="col-md-12">
+            <h3>Torneo FIFA</h3>
+            <hr>
+            </div>
+      </div>
+
+      <div class="row">
+            <div class="col-md-10">
+            </div>
+            <div class="col-md-2">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+        </ol>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+            <img width="80%" height="80%" src="../images/torneofifa.jpg">
+          </div>
+          <div class="col-md-4">
+            <img width="80%" height="80%" src="../images/torneofemenino.jpg">
+          </div>
+          <div class="col-md-4">
+            <img width="40%" height="40%" src="../images/canada.jpg">
+          </div>
       </div>
 <?php include ('../layouts/footer.php'); ?>

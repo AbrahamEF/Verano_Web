@@ -1,22 +1,24 @@
 <?php
 
-class Usuario extends Modelo{
+class Equipo extends Modelo{
     public $nombre_tabla = 'usuarios';
     public $pk = 'id_usuario';
     
     
     public $atributos = array(
-        'email'=>array(),
-        'password'=>array(),
+        'nombre'=>array(),
+        'escudo'=>array(),
+        'idpais'=>array(),
     );
     
     public $errores = array( );
     
-    private $email;
-    private $password;
+    private 'nombre';
+    private 'escudo';
+    private 'idpais';
        
     
-    function Usuario(){
+    function Equipo(){
         parent::Modelo();
     }
     
@@ -29,8 +31,8 @@ class Usuario extends Modelo{
     }
     
     
-    public function get_email(){
-        return $this->email;
+    public function get_nombre(){
+        return $this->nombre;
     } 
 
     public function set_email($valor){
@@ -44,10 +46,7 @@ class Usuario extends Modelo{
         $rs = $this->consulta_sql("select * from usuarios where email = '$valor'");
         $rows = $rs->GetArray();
         
-        if(count($rows) > 0){
-            $this->errores[] = "Este e-mail (".$valor.") ya esta registrado"; 
-        }else{
-            $this->email = trim($valor);
+        $this->email = trim($valor);
         }
     }
 
