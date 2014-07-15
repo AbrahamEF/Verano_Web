@@ -1,22 +1,20 @@
 <?php
-	class EquipoController extends Equipo{
+	class EquipoController extends Continentes{
 		
 		public $muestra_errores = false;
 		function __construct(){
 			 
 		}
 
-		public function insertaEquipo($datos){
+		public function insertaContinente($datos){
 			echo"<pre>datos";
 		    print_r($datos);
 		    echo"</pre>";
-			$equipo = new Equipo();
-			$equipo -> set_nombre($datos['nombre']);
-			$equipo -> set_idpais($datos['idpais']);
-			$equipo -> set_escudo($datos['escudo']);
+			$continente = new Continentes();
+			$continente -> set_nombre($datos['nombre']);
 
-			if(count($equipo->errores)>0){
-				print_r($equipo->errores);
+			if(count($continente->errores)>0){
+				print_r($continente->errores);
 			}
 		}
 		

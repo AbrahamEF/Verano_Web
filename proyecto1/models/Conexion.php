@@ -14,7 +14,7 @@ class Conexion {
     
     function Conexion(){
         $this->db = ADONewConnection('mysql');
-        $this->db->debug = false;
+        $this->db->debug = true;
 			       //ip     user      pass    bd
         $this->db->Connect('localhost','fifa_2014','spedITIface','base_de_datos');
 

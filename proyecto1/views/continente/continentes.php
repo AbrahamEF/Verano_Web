@@ -1,11 +1,22 @@
-<?php
 <?php 
-  session_start();
+  
+  include ('../../libs/adodb5/adodb-pager.inc.php');
+  include ('../../libs/adodb5/adodb.inc.php');
+  include ('../../models/Conexion.php');
+  include ('../../models/Modelo.php');
+  include ('../../models/Continentes.php'); //Se Modifica models/nombre.php
+  include ('../../controllers/ConinenteController.php'); //se modifico 
+  include ('../../libs/Er.php');
   include ('../layouts/header.php');
+  
+  if(isset($_POST['nombre'])){
+    
+    $continenteC=new ContinentesController();
+    $continenteC->insertaContinente($_POST);
+  }
 ?>
 
 
-      <div class="container">
         <div class="row">
             <form role="form">
                 <div class="form-group">

@@ -13,9 +13,9 @@ class Equipo extends Modelo{
     
     public $errores = array( );
     
-    private 'nombre';
-    private 'escudo';
-    private 'idpais';
+    private $nombre;    
+    private $escudo;
+    private $idpais;
        
     
     function Equipo(){
@@ -45,7 +45,7 @@ class Equipo extends Modelo{
 
         $this->nombre = trim($valor);
         }
-    }
+    
 
     public function get_escudo(){
         return $this->escudo;
@@ -61,7 +61,7 @@ class Equipo extends Modelo{
 
         $this->escudo = trim($valor);
         }
-    }
+    
 
     public function get_idpais(){
         return $this->idpais;
@@ -76,10 +76,7 @@ class Equipo extends Modelo{
         }
 
         $this->idpais = trim($valor);
-        }
-    }
-
-    
+        }    
     
 }
 
