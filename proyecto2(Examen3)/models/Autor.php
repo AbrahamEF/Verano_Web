@@ -55,7 +55,7 @@ class Autor extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_apellidos($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Estos apellidos (".$valor.") no es valido";
         }
 

@@ -16,6 +16,8 @@
 			if(count($status->errores)>0){
 				print_r($status->errores);
 			}
+
+			$status->inserta($status->get_atributos());
 		}
 	}
 

@@ -59,14 +59,15 @@
               </div>                          
 
 
-                 <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                    <label for="fecha_creacion">Fecha de Creaci&oacute;n</label> 
-                      <input type='text' class="form-control" />
-                          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                  </div>      
+              <div class="form-group">
+                <div class='input-group date' id='datetimepicker5' data-date-format="YYYY/MM/DD">
+                  <label for="fecha_creacion">Fecha de Creaci&oacute;n</label> 
+                    <input type='text' class="form-control" id="fecha_creacion" name="fecha_creacion" placeholder="Fecha" required />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>  
+
                   
                           
               <div class="form-group">
@@ -78,8 +79,9 @@
                 <label for="id_status">ID Status:</label>
                   <select id="id_status" name="id_status" class="form-control" required>
                     <option>Selecciona</option>
-                    <option>Activo</option>
-                    <option>Inactivo</option>                    
+                    <option>2</option>
+                    <option>5</option>                    
+                    <option>6</option>
                   </select>
               </div>
 

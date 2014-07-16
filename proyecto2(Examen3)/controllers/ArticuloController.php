@@ -28,6 +28,8 @@
 			if(count($articulo->errores)>0){
 				print_r($articulo->errores);
 			}
+
+			$articulo->inserta($articulo->get_atributos());
 		}
 		
 

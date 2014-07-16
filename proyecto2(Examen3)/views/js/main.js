@@ -19,6 +19,14 @@
    
   });
 
+  $(function () {
+                $('#datetimepicker5').datetimepicker({
+                    pickTime: false
+                });
+            });
+
+            
+
         $(function () {
                       $('#datetimepicker2').datetimepicker({
                           language: 'es'

@@ -11,8 +11,8 @@
   
   if(isset($_POST['nombre'])){
     
-    $equipoC=new EquipoController();
-    $equipoC->insertaEquipo($_POST);
+    $revistaC=new RevistaController();
+    $revistaC->insertaRevista($_POST);
   }
 ?>
     
@@ -34,13 +34,16 @@
               </div>
 
               <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                    <label for="fecha">Fecha</label> 
-                      <input type='text' class="form-control" />
-                          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                    </div>
-              </div>          
+                <div class='input-group date' id='datetimepicker5' data-date-format="MM/DD/YYYY">
+                  <label for="fecha">Fecha</label> 
+                  <label for="fecha_creacion">Fecha de Creaci&oacute;n</label> 
+                    <input type='text' class="form-control" id="fecha" name="fecha" placeholder="Fecha" required />
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>  
+
+                  
 
 
               <div class="form-group">
@@ -82,8 +85,9 @@
                 <label for="id_status">Status:</label>
                   <select id="id_status" name="id_status" class="form-control">
                     <option>Selecciona</option>
-                    <option>Activo</option>
-                    <option>Inactivo</option>                    
+                    <option>2</option>
+                    <option>5</option>                    
+                    <option>6</option>                    
                   </select>
               </div>
 

@@ -18,6 +18,8 @@
 			if(count($autor->errores)>0){
 				print_r($autor->errores);
 			}
+
+			$autor->inserta($autor->get_atributos());
 		}
 		
 		

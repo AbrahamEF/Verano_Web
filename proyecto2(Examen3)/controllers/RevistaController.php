@@ -28,6 +28,8 @@
 			if(count($revista->errores)>0){
 				print_r($revista->errores);
 			}
+
+			$revista->inserta($revista->get_atributos());
 		}
 		
 

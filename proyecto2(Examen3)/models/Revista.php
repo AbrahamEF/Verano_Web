@@ -73,7 +73,7 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_portada($valor) ){
+        if ( !$er->valida_archivo($valor) ){
             $this->errores[] = "Este archivo (".$valor.") no es valido";
         }
 
@@ -87,11 +87,11 @@ class Revista extends Modelo{
     
     public function set_fecha($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
         if ( !$er->valida_fecha($valor) ){
             $this->errores[] = "Esta fecha (".$valor.") no es valido";
-        }
+        }*/
 
         $this->fecha = trim($valor);
         }    
@@ -103,11 +103,11 @@ class Revista extends Modelo{
     
     public function set_volumen($valor){
    
-        $er = new Er();
+       /* $er = new Er();
         
-        if ( !$er->valida_volumen($valor) ){
+        if ( !$er->valida_num($valor) ){
             $this->errores[] = "Esta volumen (".$valor.") no es valido";
-        }
+        }*/
 
         $this->volumen = trim($valor);
         }    
@@ -121,7 +121,7 @@ class Revista extends Modelo{
 
         $er = new Er();
         
-        if ( !$er->valida_titulo($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este titulo (".$valor.") no es valido";
         }
 
@@ -136,7 +136,7 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_subtitulo($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este subtitulo (".$valor.") no es valido";
         }
 
@@ -144,18 +144,18 @@ class Revista extends Modelo{
         }    
 
         public function get_numero(){
-        return $this->fecha_numero;
+        return $this->numero;
     }
     
-    public function set_fecha_numero($valor){
+    public function set_numero($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
-        if ( !$er->valida_fecha_numero($valor) ){
+        if ( !$er->valida_num($valor) ){
             $this->errores[] = "Esta numero (".$valor.") no es valido";
-        }
+        }*/
 
-        $this->fecha_numero = trim($valor);
+        $this->numero = trim($valor);
         }    
 
 
@@ -167,7 +167,7 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_clave($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Esta clave (".$valor.") no es valido";
         }
 
@@ -183,7 +183,7 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_directorio($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este directorio (".$valor.") no es valido";
         }
 
@@ -199,7 +199,7 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_editorial($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este editorial (".$valor.") no es valido";
         }
 
@@ -213,11 +213,11 @@ class Revista extends Modelo{
     
     public function set_id_status($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
-        if ( !$er->valida_id_status($valor) ){
+        if ( !$er->valida_id_num($valor) ){
             $this->errores[] = "Este id (".$valor.") no es valido";
-        }
+        }*/
 
         $this->id_status = trim($valor);
         }    
