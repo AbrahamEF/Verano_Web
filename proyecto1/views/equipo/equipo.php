@@ -19,9 +19,7 @@
     
       <div class="row">
           <div class="col-md-4 col-md-offset-4">
-
             <form role="form" action="" method="POST">
-
                 <div class="form-group">
                     <label for="nombre">Nombre de Equipo:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Equipo" required>
@@ -31,22 +29,13 @@
                   <div class="form-group">
                     <label for="idpais">Pais</label>
                     <select class="form-control" id="ipais" name="idpais">
-                      <opton value="1">1</option>
-                      <opton value="2">2</option>
-                      <opton value="3">3</option>
+                      <option>Selecciona</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
                     </select>
                   </div>
 
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="idpais" name="idpais">
-                      ID País
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                    </ul>
-                  </div>
 
 
                   <div class="form-group">

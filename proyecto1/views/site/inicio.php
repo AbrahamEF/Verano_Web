@@ -4,7 +4,7 @@
 ?>
 
 
-      <div class="container">
+      
         <div class="row">
           <div class="col-md-1">
             <img width="130%" height="130%" src="../images/mundial.jpg">

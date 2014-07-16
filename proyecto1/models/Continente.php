@@ -1,8 +1,8 @@
 <?php
 
-class Continentes extends Modelo{
-    public $nombre_tabla = 'usuarios';
-    public $pk = 'id_usuario';
+class Continente extends Modelo{
+    public $nombre_tabla = 'continente';
+    public $pk = 'id_continente';
     
     
     public $atributos = array(
@@ -12,10 +12,10 @@ class Continentes extends Modelo{
     
     public $errores = array( );
     
-    private 'nombre';
+    private $nombre;
        
     
-    function Equipo(){
+    function Continente(){
         parent::Modelo();
     }
     

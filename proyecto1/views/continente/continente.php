@@ -4,14 +4,14 @@
   include ('../../libs/adodb5/adodb.inc.php');
   include ('../../models/Conexion.php');
   include ('../../models/Modelo.php');
-  include ('../../models/Continentes.php'); //Se Modifica models/nombre.php
-  include ('../../controllers/ConinenteController.php'); //se modifico 
+  include ('../../models/Continente.php'); //Se Modifica models/nombre.php
+  include ('../../controllers/ContinenteController.php'); //se modifico 
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
   
   if(isset($_POST['nombre'])){
     
-    $continenteC=new ContinentesController();
+    $continenteC=new ContinenteController();
     $continenteC->insertaContinente($_POST);
   }
 ?>
