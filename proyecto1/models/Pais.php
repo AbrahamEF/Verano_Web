@@ -13,9 +13,9 @@ class Pais extends Modelo{
     
     public $errores = array( );
     
-    private 'nombre';
-    private 'idcontinente';
-    private 'bandera';
+    private $nombre;
+    private $idcontinente;
+    private $bandera;
        
     
     function Pais(){
@@ -45,7 +45,7 @@ class Pais extends Modelo{
 
         $this->nombre = trim($valor);
         }
-    }
+    
 
     public function get_idcontinente(){
         return $this->idcontinente;
@@ -53,15 +53,15 @@ class Pais extends Modelo{
     
     public function set_idcontinente($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
         if ( !$er->valida_escudo($valor) ){
             $this->errores[] = "Este escudo (".$valor.") no es valido";
         }
 
-        $this->idcontinente = trim($valor);
+        $this->idcontinente = trim($valor);*/
         }
-    }
+    
 
     public function get_bandera(){
         return $this->bandera;
@@ -71,15 +71,26 @@ class Pais extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_idpais($valor) ){
-            $this->errores[] = "Este id pais (".$valor.") no es valido";
+        if ( !$er->valida_archivo($valor['name']) ){
+            $this->errores[] = "Este archivo (".$valor.") no es valido";
         }
 
-        $this->bandera = trim($valor);
-        }
-    }
+        $this->bandera = trim($valor['name']);
 
-    
+
+        /*if ( !$er->valida_tipo($valor['type']) ){
+            $this->errores[] = "Este tipo (".$valor.") no es valido";
+        }
+
+        $this->bandera = trim($valor['type']);
+
+
+        if ( !$er->valida_size($valor['size']) ){
+            $this->errores[] = "Este tamaño (".$valor.") no es valido";
+        }
+
+        $this->bandera = trim($valor['size']);*/
+        }    
     
 }
 

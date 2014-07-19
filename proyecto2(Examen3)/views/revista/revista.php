@@ -9,32 +9,62 @@
   include ('../../libs/Er.php');
   include ('../layouts/header.php');
   
-  if(isset($_POST['nombre'])){
-    
-    $revistaC=new RevistaController();
-    $revistaC->insertaRevista($_POST);
+
+  //echo"<pre>datos:";
+    //  print_r($_POST);
+      //print_r($_FILES);
+      //echo"</pre>";
+  $revistaC=new RevistaController();
+  if(isset($_POST['nombre'])){  
+    $revistaC->insertaRevista($_POST, $_FILES);
   }
+
 ?>
     
     
       <div class="row">
           <div class="col-md-4 col-md-offset-4">
-            <form role="form" action="" method="POST">
+            <?php
+                if($revistaC->muestra_errores){
+            ?>
+              <div class="alert alert-danger">
+                <?php
+                  foreach($revistaC->errores as $value){
+                    echo "<p>error: $value</p>";
+                  }
+              ?>
+                    
+                </div>
+            <?php
+              }else{
+                echo 'no entra al if';
+              }
+
+            ?>
+          <div class="alert alert-danger">
+
+          </div>
+            <form role="form" action="" method="POST" enctype="multipart/form-data" >
                 <div class="form-group">
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" value="<?php echo $revistaC->get_nombre(); ?>">
               </div>
               <div class="form-group">
                 <label for="portada">Portada:</label>
                 <input type="file" class="form-control" name="portada" id="portada">
               </div>
 
+              <!--form enctype="multipart/form-data" action="uploader.php" method="POST"-->
+              <!--input name="uploadedfile" type="file" /-->
+              <!--input type="submit" value="Subir archivo" /-->
+              <!--/form-->
+
               <div class="form-group">
-                <div class='input-group date' id='datetimepicker5' data-date-format="MM/DD/YYYY">
+                <div class='input-group date' id='datetimepicker5' data-date-format="YYYY/MM/DD">
                   <label for="fecha">Fecha</label> 
                   <label for="fecha_creacion">Fecha de Creaci&oacute;n</label> 
                     <input type='text' class="form-control" id="fecha" name="fecha" placeholder="Fecha" required />

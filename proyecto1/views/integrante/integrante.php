@@ -1,11 +1,34 @@
 <?php 
-  session_start();
+  
+  include ('../../libs/adodb5/adodb-pager.inc.php');
+  include ('../../libs/adodb5/adodb.inc.php');
+  include ('../../models/Conexion.php');
+  include ('../../models/Modelo.php');
+  include ('../../models/Integrante.php'); //Se Modifica models/nombre.php
+  include ('../../controllers/IntegranteController.php'); //se modifico 
+  include ('../../libs/Er.php');
   include ('../layouts/header.php');
+  
+
+  //echo"<pre>datos:";
+    //  print_r($_POST);
+      //print_r($_FILES);
+      //echo"</pre>";
+    
+  if(isset($_POST['nombre'])){
+    
+    $integranteC=new IntegranteController();
+    $integranteC->insertaIntegrante($_POST, $_FILES);
+  }
 ?>
 
-    <div class="container">
+<br/>
+<br/>
+<br/>
+<p><a class="various" href="../site/inicio.php" role="button">Regresar</a></p>
         <div class="row">
-            <form role="form">
+          <div class="col-md-4 col-md-offset-4">
+            <form role="form" action="" method="POST" enctype="multipart/form-data" >
                 <div class="form-group">
                     <label for="nombre">Nombre de Integrante:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Nombre" required>
@@ -38,30 +61,19 @@
                   </div>
 
 
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="idequipo" name="idequipo">
-                      ID Equipo
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                    </ul>
-                  </div>
+                  <div class="form-group">
+                <label for="id_status">ID Equipo:</label>
+                  <select id="idequipo" name="idequipo" class="form-control">
+                    <option>Selecciona</option>
+                    <option>1</option>
+                    <option>2</option>                    
+                    <option>3</option>                    
+                  </select>
+              </div>
 
                   <br/>
 
-                  <div class="form-group">
-                    <label for="bandera">Bandera</label>
-                    <input type="file" id="bandera" name="bandera" required>
-
-                    <p class="help-block">No dejar en blanco ningun campo</p>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Check me out
-                    </label>
-                  </div>
+                  
                   <button type="submit" class="btn btn-default">Guardar</button>
                 </form>
           </div>

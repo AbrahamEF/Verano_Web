@@ -18,7 +18,7 @@
               <li><a class="various" data-fancybox-type="iframe" href="../articulo/articulo.php" role="button"> Articulo </a></li>
               <li><a class="various" data-fancybox-type="iframe" href="../status/status.php" role="button"> Status </a></li>
               <li><a class="various" data-fancybox-type="iframe" href="../revista/revista.php" role="button"> Revista </a></li></p>
-            </div></ul>
+      </div></ul>
 
 
 

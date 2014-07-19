@@ -73,12 +73,26 @@ class Revista extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_archivo($valor) ){
+        if ( !$er->valida_archivo($valor['name']) ){
             $this->errores[] = "Este archivo (".$valor.") no es valido";
         }
 
-        $this->portada = trim($valor);
+        $this->portada = trim($valor['name']);
+        
+       /* if ( !$er->valida_archivo($valor['type']) ){
+            $this->errores[] = "Este tipo de archivo (".$valor.") no es valido";
         }
+
+        $this->portada = trim($valor['type']);
+        
+
+        if ( !$er->valida_archivo($valor['size']) ){
+            $this->errores[] = "Este tamaño de archivo (".$valor.") no es valido";
+        }
+
+        $this->portada = trim($valor['size']);*/
+        }
+        //AGREGAR FUNCION PARA VALIDAR TIPO Y TAMAÑO DE ARCHIVO
     
 
     public function get_fecha(){

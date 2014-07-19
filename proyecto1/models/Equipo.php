@@ -55,11 +55,25 @@ class Equipo extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_escudo($valor) ){
+        if ( !$er->valida_archivo($valor['name']) ){
             $this->errores[] = "Este escudo (".$valor.") no es valido";
         }
 
-        $this->escudo = trim($valor);
+        $this->escudo = trim($valor['name']);
+
+
+       /* if ( !$er->valida_tipo($valor['type']) ){
+            $this->errores[] = "Este tipo de escudo (".$valor.") no es valido";
+        }
+
+        $this->escudo = trim($valor['type']);
+
+
+        if ( !$er->valida_size($valor['size']) ){
+            $this->errores[] = "Este tamaño de escudo (".$valor.") no es valido";
+        }
+
+        $this->escudo = trim($valor['size']);*/
         }
     
 
@@ -69,13 +83,13 @@ class Equipo extends Modelo{
     
     public function set_idpais($valor){
    
-        $er = new Er();
+       /* $er = new Er();
         
         if ( !$er->valida_idpais($valor) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->idpais = trim($valor);
+        $this->idpais = trim($valor);*/
         }    
     
 }

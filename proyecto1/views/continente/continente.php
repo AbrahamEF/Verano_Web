@@ -16,8 +16,12 @@
   }
 ?>
 
-
+<br/>
+<br/>
+<br/>
+<p><a class="various"  href="../site/inicio.php" role="button">Regresar</a></p>
         <div class="row">
+        <div class="col-md-4 col-md-offset-4">
             <form role="form">
                 <div class="form-group">
                     <label for="nombre">Nombre de Continente:</label>

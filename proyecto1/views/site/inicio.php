@@ -44,19 +44,24 @@
               <li class="abled"><a href="#">Destino</a></li>
               <li class="abled"><a href="#">Organización</a></li>
             </ul>
+          </div>
         </div>
+
+        <hr>
 
 
       <div class="row">
           <div class="col-md-12">
 
-        <div class="btn-group">
-        <button type="submit" class="btn btn-default" id="equ">Alta Equipo</button>
-        <button type="submit" class="btn btn-default" id="int">Alta Integrante</button>
-        <button type="submit" class="btn btn-default" id="pos">Alta Posción</button>
-        <button type="submit" class="btn btn-default" id="pai">Alta País</button>
-        <button type="submit" class="btn btn-default" id="con">Alta Continente</button>
-        <button type="submit" class="btn btn-default" id="est">Alta Estadio</button>
+              
+               <ul class="nav nav-pills">
+                    <p><li><a class="various" data-fancybox-type="iframe" href="../equipo/equipo.php" role="button">Alta Equipo </a></li>        
+                    <li><a class="various" data-fancybox-type="iframe" href="../integrante/integrante.php" role="button"> Alta Integrante </a></li>
+                    <li><a class="various" data-fancybox-type="iframe" href="../posicion/posicion.php" role="button"> Alta Posción </a></li>
+                    <li><a class="various" data-fancybox-type="iframe" href="../pais/pais.php" role="button"> Alta País </a></li>
+                    <li><a class="various" data-fancybox-type="iframe" href="../continente/continente.php" role="button"> Alta Continente </a></li>
+                    <li><a class="various" data-fancybox-type="iframe" href="../estadio/estadio.php" role="button"> Alta Estadio </a></li></p>
+                </ul>
 
           </div>
       </div>

@@ -12,14 +12,14 @@
   if(isset($_POST['nombre'])){
     
     $articuloC=new ArticuloController();
-    $articuloC->insertaArticulo($_POST);
+    $articuloC->insertaArticulo($_POST, $_FILES);
   }
 ?>
     
     
       <div class="row">
           <div class="col-md-4 col-md-offset-4">
-            <form role="form" action="" method="POST">
+            <form role="form" action="" method="POST" enctype="multipart/form-data" >
                 <div class="form-group">
                 <br/>
                 <br/>
@@ -41,7 +41,7 @@
                 </div>
 
 
-                <div class="form-group">
+              <div class="form-group">
                 <label for="introduccion">Instroduci&oacute;n:</label>
                 <textarea type="text" class="form-control" id="introduccion" name="introduccion" placeholder="Intropducci&oacute;n" required></textarea>
               </div>
@@ -66,13 +66,13 @@
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                 </div>
-            </div>  
+              </div>  
 
                   
                           
               <div class="form-group">
                 <label for="archivo_pdf">PDF:</label>
-                <input type="file" class="form-control" name="archivo_pdf" id="archivo_pdf" required>
+                 <input type="file" class="form-control" name="archivo_pdf" id="archivo_pdf" required>
               </div>
               
               <div class="form-group">
@@ -106,8 +106,8 @@
               <button type="submit" class="btn btn-default">Enviar</button>
             </form>
           
-        </div>
-    </div>
+          </div>
+      </div>
 
       
 

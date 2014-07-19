@@ -11,23 +11,22 @@ class Integrante extends Modelo{
         'peso'=>array(),
         'estatura'=>array(),
         'foto'=>array(),
-        'edad'=>array(),
+        'Edad'=>array(),
         'idequipo'=>array(),
-        'bandera'=>array(),
+        
     );
     
     public $errores = array( );
     
-    private 'nombre';
-    private 'apellido';
-    private 'peso';
-    private 'estatura';
-    private 'foto';
-    private 'edad';
-    private 'idequipo';
-    private 'bandera';       
-        
-       
+    private $nombre;
+    private $apellido;
+    private $peso;
+    private $estatura;
+    private $foto;
+    private $Edad;
+    private $idequipo;
+    
+           
     
     function Equipo(){
         parent::Modelo();
@@ -56,7 +55,7 @@ class Integrante extends Modelo{
 
         $this->nombre = trim($valor);
         }
-    }
+    
 
     public function get_apellido(){
         return $this->apellido;
@@ -66,13 +65,13 @@ class Integrante extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_apellido($valor) ){
+        if ( !$er->valida_nombre($valor) ){
             $this->errores[] = "Este escudo (".$valor.") no es valido";
         }
 
         $this->apellido = trim($valor);
         }
-    }
+    
 
     public function get_peso(){
         return $this->peso;
@@ -80,15 +79,15 @@ class Integrante extends Modelo{
     
     public function set_peso($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
-        if ( !$er->valida_peso($valor) ){
+        if ( !$er->valida_num($valor) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->peso = trim($valor);
+        $this->peso = trim($valor);*/
         }
-    }
+    
 
 
     public function get_estatura(){
@@ -97,15 +96,15 @@ class Integrante extends Modelo{
     
     public function set_estatura($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
         if ( !$er->valida_estatura($valor) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->estatura = trim($valor);
+        $this->estatura = trim($valor);*/
         }
-    }
+    
 
 
     public function get_foto(){
@@ -116,30 +115,42 @@ class Integrante extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_foto($valor) ){
+        if ( !$er->valida_archivo($valor['name']) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->foto = trim($valor);
+        $this->foto = trim($valor['name']);
+
+        /*if ( !$er->valida_tipo($valor['type']) ){
+            $this->errores[] = "Este tipo (".$valor.") no es valido";
         }
-    }
+
+        $this->foto = trim($valor['type']);
+
+        if ( !$er->valida_size($valor['size']) ){
+            $this->errores[] = "Este tamaño (".$valor.") no es valido";
+        }
+
+        $this->foto = trim($valor['size']);*/
+        }
+    
 
 
-    public function get_edad(){
-        return $this->edad;
+    public function get_Edad(){
+        return $this->Edad;
     }
     
-    public function set_edad($valor){
+    public function set_Edad($valor){
    
-        $er = new Er();
+        /*$er = new Er();
         
         if ( !$er->valida_edad($valor) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->edad = trim($valor);
+        $this->edad = trim($valor);*/
         }
-    }
+    
 
 
     public function get_idequpo(){
@@ -148,32 +159,14 @@ class Integrante extends Modelo{
     
     public function set_idequipo($valor){
    
-        $er = new Er();
+       /* $er = new Er();
         
         if ( !$er->valida_idequipo($valor) ){
             $this->errores[] = "Este id pais (".$valor.") no es valido";
         }
 
-        $this->idequipo = trim($valor);
+        $this->idequipo = trim($valor);*/
         }
-    }
-
-
-    public function get_bandera(){
-        return $this->bandera;
-    }
-    
-    public function set_bandera($valor){
-   
-        $er = new Er();
-        
-        if ( !$er->valida_bandera($valor) ){
-            $this->errores[] = "Este id pais (".$valor.") no es valido";
-        }
-
-        $this->bandera = trim($valor);
-        }
-    }
 
     
     

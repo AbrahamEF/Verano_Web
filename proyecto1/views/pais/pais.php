@@ -1,27 +1,49 @@
 <?php 
-  session_start();
+  
+  include ('../../libs/adodb5/adodb-pager.inc.php');
+  include ('../../libs/adodb5/adodb.inc.php');
+  include ('../../models/Conexion.php');
+  include ('../../models/Modelo.php');
+  include ('../../models/Pais.php'); //Se Modifica models/nombre.php
+  include ('../../controllers/PaisController.php'); //se modifico 
+  include ('../../libs/Er.php');
   include ('../layouts/header.php');
+  
+
+  //echo"<pre>datos:";
+    //  print_r($_POST);
+      //print_r($_FILES);
+      //echo"</pre>";
+    
+  if(isset($_POST['nombre'])){
+    
+    $paisC=new PaisController();
+    $paisC->insertaPais($_POST, $_FILES);
+  }
 ?>
 
-
-      <div class="container">
+<br/>
+<br/>
+<br/>
+<p><a class="various" href="../site/inicio.php" role="button">Regresar</a></p>
         <div class="row">
-            <form role="form">
+          <div class="col-md-4 col-md-offset-4">
+            <form role="form" action="" method="POST" enctype="multipart/form-data" >
                 <div class="form-group">
                     <label for="nombre">Nombre de Pais:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Nombre" required>
                   </div>
 
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="idcontinente" name="idcontinente">
-                      ID Continente
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                    </ul>
-                  </div>
+            <div class="form-group">
+                <label for="id_status">ID Continente:</label>
+                  <select id="idcontinente" name="idcontinente" class="form-control">
+                    <option>Selecciona</option>
+                    <option>1</option>
+                    <option>2</option>                    
+                    <option>3</option>
+                  </select>
+            </div>
+
 
                   <br/>
 

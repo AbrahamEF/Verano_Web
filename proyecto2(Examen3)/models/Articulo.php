@@ -166,12 +166,26 @@ class Articulo extends Modelo{
    
         $er = new Er();
         
-        if ( !$er->valida_archivo($valor) ){
+        if ( !$er->valida_archivo($valor['name']) ){
             $this->errores[] = "Este archivo (".$valor.") no es valido";
         }
 
-        $this->archivo_pdf = trim($valor);
-        }    
+        $this->archivo_pdf = trim($valor['name']);
+        
+        
+        /*if ( !$er->valida_archivo($valor['type']) ){
+            $this->errores[] = "Este tipo de archivo (".$valor.") no es valido";
+        }
+
+        $this->archivo_pdf = trim($valor['type']);    
+
+
+        if ( !$er->valida_archivo($valor['size']) ){
+            $this->errores[] = "Este tamaño de archivo (".$valor.") no es valido";
+        }
+
+        $this->archivo_pdf = trim($valor['size']);*/
+        }   
 
 
         public function get_id_status(){

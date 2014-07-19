@@ -12,14 +12,14 @@
   if(isset($_POST['nombre'])){
     
     $equipoC=new EquipoController();
-    $equipoC->insertaEquipo($_POST);
+    $equipoC->insertaEquipo($_POST, $_FILES);
   }
 ?>
     
     
       <div class="row">
           <div class="col-md-4 col-md-offset-4">
-            <form role="form" action="" method="POST">
+             <form role="form" action="" method="POST" enctype="multipart/form-data" >
                 <div class="form-group">
                     <label for="nombre">Nombre de Equipo:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introdusca Equipo" required>
